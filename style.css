@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#init-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  background-color: #000;
+}
+
+#info-card-wrapper {
+  width: 100%;
+  display: flex;
+  height: fit-content;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.info-card {
+  padding: 40px;
+  width: 25%;
+  background-color: rgba(80, 80, 80, 0.1);
+  margin: 40px;
+  border-radius: 10px;
+  animation-name: slideCard; 
+  animation-duration: 4s;
+  animation-play-state: running;
+  animation-iteration-count: inherit;
+  /* .4s linear 0 none normal forwards ; */
+}
+
+.step-marker {
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  background-color: red;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+label {
+  color: #fff;
+  display: flex;
+  margin-top: 20px;
+}
+
+input{
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+input:focus{
+  outline: none;
+}
+
+.info-field-container {
+  margin-top: 20px;
+  display: flex;
+}
+
+button {
+  background-color: red;
+}
+
+@keyframes slideCard{
+  0% {
+    margin-left: 20%;
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0.6;
+  }
+
+  100% {
+    margin-left: 40px;
+    opacity: 1;
+  }
+}
