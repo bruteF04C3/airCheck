@@ -10,46 +10,54 @@
 </head>
 
 <body>
-    <div id="init-wrapper">
-        <iframe id="init-bg" src="https://giphy.com/embed/3o7WIB00yXujVt4WEo" width="480" height="480" frameBorder="0"
-            class="giphy-embed" allowFullScreen></iframe>
-    </div>
-    <!-- City input -->
-    <div id="info-card-wrapper">
-        <div class="info-card" id="city-card">
-            <span class="step-marker red"> STEP 1 </span>
-            <!-- <label for=""> City Name </label> -->
-            <!-- more info along label-->
-            <!-- <img src="assets/info.png" alt="" style="height: 15px; align-self: center; margin-left: 10px;"> -->
-            <div class="info-field-container">
-                <input type="text" name="" id="city-name" placeholder="Enter city here" onchange="getCityName(this.value)">
-                <img class="next-step-img" src="assets/arrow.png" alt="" srcset="" onclick="showNextCard('city-name')">
+    <main>
+
+        <div id="init-wrapper">
+            <iframe id="init-bg" src="https://giphy.com/embed/3o7WIB00yXujVt4WEo" width="480" height="480"
+                frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+        <!-- City input -->
+        <div id="info-card-wrapper">
+            <div class="info-card" id="city-card">
+                <span class="step-marker red"> STEP 1 </span>
+                <!-- <label for=""> City Name </label> -->
+                <!-- more info along label-->
+                <!-- <img src="assets/info.png" alt="" style="height: 15px; align-self: center; margin-left: 10px;"> -->
+                <div class="info-field-container">
+                    <input type="text" name="" id="city-name" placeholder="Enter city here"
+                        onchange="getCityName(this.value)">
+                    <img class="next-step-img" src="assets/arrow.png" alt="" srcset=""
+                        onclick="showNextCard('city-name')">
+                </div>
+
+            </div>
+
+            <!-- State input -->
+            <div class="info-card" id="state-card">
+                <span class="step-marker yellow"> STEP 2 </span>
+                <div class="info-field-container">
+                    <input type="text" name="" id="state-name" placeholder="Enter state here"
+                        onchange="getStateName(this.value)">
+                    <img class="next-step-img" src="assets/arrow.png" alt="" srcset=""
+                        onclick="showNextCard('state-name')">
+                </div>
+
+            </div>
+
+            <!-- Country input -->
+
+            <div class="info-card" id="country-card">
+                <span class="step-marker green"> STEP 3 </span>
+                <div class="info-field-container">
+                    <input type="text" name="" id="country-name" placeholder="Enter country here"
+                        onchange="getCountryName(this.value)">
+                    <img class="next-step-img" src="assets/checkmark.png" alt="" srcset="" onclick="getResult()">
+                </div>
+
             </div>
 
         </div>
-
-    <!-- State input -->
-    <div class="info-card" id="state-card">
-        <span class="step-marker yellow"> STEP 2 </span>
-        <div class="info-field-container">
-            <input type="text" name="" id="state-name" placeholder="Enter state here" onchange="getStateName(this.value)">
-            <img  class="next-step-img" src="assets/arrow.png" alt="" srcset="" onclick="showNextCard('state-name')">
-        </div>
-
-    </div>
-
-    <!-- Country input -->
-    
-    <div class="info-card" id="country-card">
-        <span class="step-marker green"> STEP 3 </span>
-        <div class="info-field-container">
-            <input type="text" name="" id="country-name" placeholder="Enter country here" onchange="getCountryName(this.value)">
-            <img  class="next-step-img" src="assets/checkmark.png" alt="" srcset="" onclick="getResult()">
-        </div>
-
-    </div>
-
-    </div>
+    </main>
 
     <script src="script.js"></script>
 </body>

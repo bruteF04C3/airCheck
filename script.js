@@ -31,18 +31,40 @@ function getResult() {
     url = `http://api.airvisual.com/v2/city?city=${city}&state=${state}&country=${country}&key=${API_KEY}`;
     fetch(url)
         .then((response) => {
-            return response.json()
+            if(response.status == '200') {
+                return response.json();
+            }
         })
         .then((json) => {
-            renderResults(json);
+            renderResults(json.data);
         })
         .catch(error => {
             console.error(error);
+            renderError(error);
         });
 
 }
 
 function renderResults(data) {
-    
+    const ROOT = document.querySelector('main');
+    ROOT.innerHTML = '';
+    const US_AQI = data.current.pollution.aqius;
+    if(US_AQI < 50) {
+        safeEnv(data);
+    } else if(US_AQI > 50 && US_AQI < 200) {
+        balancedEnv(data);
+    } else if(US_AQI > 200) {
+        dangerousEnv(data);
+    } else {
+        renderError(null);
+    }
+}
+
+function renderError(data){
+    if(data != null) {
+        //container with actual error
+    } else {
+        //container with a generic message
+    }
 }
 
