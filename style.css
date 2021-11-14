@@ -28,20 +28,39 @@
   background-color: rgba(80, 80, 80, 0.1);
   margin: 40px;
   border-radius: 10px;
-  animation-name: slideCard; 
-  animation-duration: 4s;
+  animation-name: slideCard;
+  animation-duration: 2s;
   animation-play-state: running;
   animation-iteration-count: inherit;
   /* .4s linear 0 none normal forwards ; */
 }
 
+#state-card {
+  display: none;
+}
+
+#country-card {
+  display: none;
+}
+
 .step-marker {
   padding: 5px;
   color: rgb(255, 255, 255);
-  background-color: red;
   width: 100%;
   border-radius: 5px;
   font-size: 12px;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow{
+  background-color: orange;
+}
+
+.green {
+  background-color: green;
 }
 
 label {
@@ -50,17 +69,17 @@ label {
   margin-top: 20px;
 }
 
-input{
-    padding: 20px;
-    width: 100%;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    font-size: 20px;
-    font-weight: 900;
+input {
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 900;
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
 
@@ -69,11 +88,14 @@ input:focus{
   display: flex;
 }
 
-button {
-  background-color: red;
+.next-step-img {
+  height: 30px;
+  align-self: center;
+  margin-left: 20px;
+  cursor: pointer;
 }
 
-@keyframes slideCard{
+@keyframes slideCard {
   0% {
     margin-left: 20%;
     opacity: 0;
