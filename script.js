@@ -83,7 +83,7 @@ function successCard(data) {
     <h4>humidity</h4>
     </div>
     <div class="stat-card">
-    <h1>${data.current.weather.tp} &#9675; C</h1>
+    <h1>${data.current.weather.tp} &#176;C</h1>
     <span class="separator">
         &#9679;
     </span>
