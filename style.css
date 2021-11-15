@@ -73,6 +73,13 @@ main{
   position: relative;
 }
 
+#version-info{
+  position: absolute;
+  right: 0;
+  display: block;
+}
+
+
 .card-body{
   width: 100%;
   display: flex;
@@ -187,12 +194,19 @@ h4{
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .card{
     width: 100%;
+  }
+
+  #version-info{
+    position: absolute;
+    right: 0;
+    display: none;
   }
 
   #result-card{
     width: 100%;
   }
+
 }
