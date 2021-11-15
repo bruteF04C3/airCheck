@@ -69,6 +69,13 @@ function renderResult(status, data) {
 function successCard(data) {
     STATS.innerHTML = `
     <div class="stat-card">
+    <h1>${data.city}</h1>
+    <span class="separator">
+        &#9679;
+    </span>
+    <h4>aqius</h4>
+    </div>
+    <div class="stat-card">
     <h1>${data.current.pollution.aqius}</h1>
     <span class="separator">
         &#9679;
