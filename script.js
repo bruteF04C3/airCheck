@@ -66,7 +66,7 @@ function renderResult(status, data) {
 }
 
 function successCard(data) {
-    console.log(data);
+    
 }
 
 function failureCard(data) {

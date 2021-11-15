@@ -17,8 +17,8 @@
                 frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
         <!-- City input -->
-        <div id="info-card-wrapper">
-            <div class="info-card" id="city-card">
+        <div id="user-info-card-wrapper">
+            <div class="card" id="city-card">
                 <span class="step-marker red"> STEP 1 </span>
                 <!-- <label for=""> City Name </label> -->
                 <!-- more info along label-->
@@ -33,7 +33,7 @@
             </div>
 
             <!-- State input -->
-            <div class="info-card" id="state-card">
+            <div class="card" id="state-card">
                 <span class="step-marker yellow"> STEP 2 </span>
                 <div class="info-field-container">
                     <input type="text" name="" id="state-name" placeholder="Enter state here"
@@ -46,7 +46,7 @@
 
             <!-- Country input -->
 
-            <div class="info-card" id="country-card">
+            <div class="card" id="country-card">
                 <span class="step-marker green"> STEP 3 </span>
                 <div class="info-field-container">
                     <input type="text" name="" id="country-name" placeholder="Enter country here"
@@ -57,6 +57,28 @@
             </div>
 
         </div>
+
+        <div id="result-card-wrapper">
+            <div class="card" id="result-card">
+                <div class="card-header" style="display: flex;">
+                    <h1> Air Check </h1>
+                    <span class="separator">
+                        &#9679;
+                    </span>
+                    <h4>
+                        Air quality stats and more
+                    </h4>
+                </div>
+                <div class="card-body" id="_stats">
+                    <p>
+                        Stats will be shown here, kindly follow the steps above for the same.
+                    </p>
+                </div>
+
+                
+            </div>
+        </div>
+
     </main>
 
     <script src="script.js"></script>
