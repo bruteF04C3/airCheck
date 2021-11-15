@@ -31,7 +31,7 @@ function showNextCard(prevCard) {
 }
 
 function getResult() {    
-    url = `http://api.airvisual.com/v2/city?city=${city}&state=${state}&country=${country}&key=${API_KEY}`;
+    url = `/api/city?city=${city}&state=${state}&country=${country}&key=${API_KEY}`;
     fetch(url)
         .then((response) => {
             if(response.status == '200') {

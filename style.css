@@ -174,3 +174,13 @@ h4{
     opacity: 1;
   }
 }
+
+@media (max-width: 500px) {
+  .card{
+    width: 100%;
+  }
+
+  #result-card{
+    width: 100%;
+  }
+}
