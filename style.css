@@ -78,6 +78,12 @@ main{
   padding: 10px 0;
 }
 
+.stat-card{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
 #state-card {
   display: none;
 }

@@ -68,28 +68,28 @@ function renderResult(status, data) {
 
 function successCard(data) {
     STATS.innerHTML = `
-    <div style="display: flex">
+    <div class="stat-card">
     <h1>${data.current.pollution.aqius}</h1>
     <span class="separator">
         &#9679;
     </span>
     <h4>aqius</h4>
     </div>
-    <div style="display: flex">
+    <div class="stat-card">
     <h1>${data.current.weather.hu}</h1>
     <span class="separator">
         &#9679;
     </span>
     <h4>humidity</h4>
     </div>
-    <div style="display: flex">
+    <div class="stat-card">
     <h1>${data.current.weather.tp}</h1>
     <span class="separator">
         &#9679;
     </span>
     <h4>temperature</h4>
     </div>
-    <div style="display: flex">
+    <div class="stat-card">
     <h1>${data.current.weather.ws}</h1>
     <span class="separator">
         &#9679;
