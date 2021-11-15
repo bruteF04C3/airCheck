@@ -73,7 +73,7 @@ function successCard(data) {
     <span class="separator">
         &#9679;
     </span>
-    <h4>aqius</h4>
+    <h4>City</h4>
     </div>
     <div class="stat-card">
     <h1>${data.current.pollution.aqius}</h1>
