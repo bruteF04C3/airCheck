@@ -4,6 +4,9 @@ let state = '';
 let country = '';
 let url = '';
 
+const ROOT = document.querySelector('main');
+
+
 function getCityName(val) {
     city = val;
 }
@@ -33,38 +36,75 @@ function getResult() {
         .then((response) => {
             if(response.status == '200') {
                 return response.json();
+            } else {
+                return 'Error';
             }
         })
         .then((json) => {
-            renderResults(json.data);
+            //initEnv(json.data);
+            renderResult('success', json.data);
         })
         .catch(error => {
             console.error(error);
-            renderError(error);
+            renderResult('failure', error);
         });
 
 }
 
-function renderResults(data) {
-    const ROOT = document.querySelector('main');
-    ROOT.innerHTML = '';
-    const US_AQI = data.current.pollution.aqius;
-    if(US_AQI < 50) {
-        safeEnv(data);
-    } else if(US_AQI > 50 && US_AQI < 200) {
-        balancedEnv(data);
-    } else if(US_AQI > 200) {
-        dangerousEnv(data);
-    } else {
-        renderError(null);
+function renderResult(status, data) {
+    switch(status) {
+        case 'success':
+            successCard(data);
+            break;
+        
+        case 'failure':
+            failureCard(data);
+            break;
+        default: 
+            //
     }
 }
 
-function renderError(data){
-    if(data != null) {
-        //container with actual error
-    } else {
-        //container with a generic message
-    }
+function successCard(data) {
+    console.log(data);
 }
 
+function failureCard(data) {
+
+}
+
+// function initEnv(data) {
+//     ROOT.innerHTML = '';
+//     const US_AQI = data.current.pollution.aqius;
+//     if(US_AQI < 50) {
+//         safeEnv(data);
+//     } else if(US_AQI > 50 && US_AQI < 200) {
+//         balancedEnv(data);
+//     } else if(US_AQI > 200) {
+//         dangerousEnv(data);
+//     } else {
+//         renderError(null);
+//     }
+// }
+
+// // Environments..
+// function safeEnv(data) {
+//     ROOT.style.backgroundImage =  'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0 , 0, 0, 0.5)), url(assets/greenery.jpg)';
+    
+// }
+
+// function balancedEnv(data) {
+//     ROOT.style.backgroundImage =  'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0 , 0, 0, 0.5)), url(assets/greenery.jpg)';
+// }
+
+// function dangerousEnv(data) {
+//     ROOT.style.backgroundImage =  'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0 , 0, 0, 0.5)), url(assets/burning.jpg)';
+// }
+
+// function renderError(data){
+//     if(data != null) {
+//         //container with actual error
+//     } else {
+//         //container with a generic message
+//     }
+// }
