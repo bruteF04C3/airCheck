@@ -162,6 +162,7 @@ h1, h4, p{
 
 h4{
   margin-left: 20px;
+  font-weight: 200;
 }
 
 @keyframes slideCard {
