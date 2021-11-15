@@ -19,7 +19,7 @@ main{
   background-color: #000;
 }
 
-#info-card-wrapper {
+#user-info-card-wrapper {
   width: 100%;
   display: flex;
   height: fit-content;
@@ -29,7 +29,17 @@ main{
   top: 0;
 }
 
-.info-card {
+#result-card-wrapper {
+  width: 100%;
+  display: flex;
+  height: fit-content;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+}
+
+.card {
   padding: 40px;
   width: 25%;
   background-color: rgba(80, 80, 80, 0.1);
@@ -42,12 +52,42 @@ main{
   /* .4s linear 0 none normal forwards ; */
 }
 
+.card-header, .card-body, .card-footer{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-header{
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  padding: 0 0 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-body{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px 0;
+}
+
 #state-card {
   display: none;
 }
 
 #country-card {
   display: none;
+}
+
+#result-card{
+  width: 50%;
 }
 
 .step-marker {
@@ -100,6 +140,19 @@ input:focus {
   align-self: center;
   margin-left: 20px;
   cursor: pointer;
+}
+
+.separator{
+  color: #fff;
+  margin-left: 20px;
+}
+
+h1, h4{
+  color: #fff;
+}
+
+h4{
+  margin-left: 20px;
 }
 
 @keyframes slideCard {
