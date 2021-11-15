@@ -5,7 +5,7 @@ let country = '';
 let url = '';
 
 const ROOT = document.querySelector('main');
-
+const STATS = document.getElementById('_stats');
 
 function getCityName(val) {
     city = val;
@@ -52,6 +52,7 @@ function getResult() {
 }
 
 function renderResult(status, data) {
+    STATS.innerHTML = '';
     switch(status) {
         case 'success':
             successCard(data);
@@ -66,7 +67,7 @@ function renderResult(status, data) {
 }
 
 function successCard(data) {
-    
+    STATS.innerHTML = `<h1>${data.current.pollution.aqius}</h1>`;
 }
 
 function failureCard(data) {
