@@ -196,10 +196,6 @@ h4{
 
 @media (max-width: 800px) {
 
-  #result-card-wrapper {
-    top: 30%;
-  }
-
   .card{
     width: 100%;
   }
