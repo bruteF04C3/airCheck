@@ -32,6 +32,7 @@ function showNextCard(prevCard) {
 }
 
 function getResult() {
+    STATS.style.display = 'none';
     loader.style.display = 'flex';    
     url = `/api/city?city=${city}&state=${state}&country=${country}&key=${API_KEY}`;
     fetch(url)
