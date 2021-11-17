@@ -6,6 +6,7 @@ let url = '';
 
 const ROOT = document.querySelector('main');
 const STATS = document.getElementById('_stats');
+const loader = document.getElementById('loader-wrapper');
 
 function getCityName(val) {
     city = val;
@@ -30,7 +31,8 @@ function showNextCard(prevCard) {
 
 }
 
-function getResult() {    
+function getResult() {
+    loader.style.display = 'flex';    
     url = `/api/city?city=${city}&state=${state}&country=${country}&key=${API_KEY}`;
     fetch(url)
         .then((response) => {
@@ -52,6 +54,7 @@ function getResult() {
 }
 
 function renderResult(status, data) {
+    loader.style.display = 'none';
     STATS.innerHTML = '';
     switch(status) {
         case 'success':
