@@ -56,6 +56,7 @@ function getResult() {
 
 function renderResult(status, data) {
     loader.style.display = 'none';
+    STATS.style.display = 'flex';
     STATS.innerHTML = '';
     switch(status) {
         case 'success':
