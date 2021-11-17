@@ -89,6 +89,10 @@ main{
   padding: 10px 0;
 }
 
+#loader-wrapper{
+  display: none;
+}
+
 .stat-card{
   width: 100%;
   display: flex;
