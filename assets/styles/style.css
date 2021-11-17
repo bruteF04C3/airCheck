@@ -45,11 +45,11 @@ main{
 .card {
   padding: 40px;
   width: 25%;
-  background-color: rgba(80, 80, 80, 0.1);
+  background-color: rgba(10, 10, 10, 0.9);
   margin: 40px;
   border-radius: 10px;
   animation-name: slideCard;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-play-state: running;
   animation-iteration-count: inherit;
   /* .4s linear 0 none normal forwards ; */
@@ -169,7 +169,7 @@ input:focus {
   margin-left: 20px;
 }
 
-h1, h4, p{
+h1, h3, h4, h5, p{
   color: #fff;
 }
 
@@ -201,6 +201,7 @@ h4{
 @media (max-width: 800px) {
   .card{
     width: 100%;
+    background-color: rgba(10, 10, 10, 0.9);
   }
 
   #version-info{
