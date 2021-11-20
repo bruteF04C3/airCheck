@@ -3,6 +3,13 @@ let city = '';
 let state = '';
 let country = '';
 let url = '';
+let env = '';
+
+if(window.location.href.includes('netlify')) {
+    env = 'production'
+} else {
+    env = 'local'
+}
 
 const ROOT = document.querySelector('main');
 const STATS = document.getElementById('_stats');
@@ -33,8 +40,13 @@ function showNextCard(prevCard) {
 
 function getResult() {
     STATS.style.display = 'none';
-    loader.style.display = 'flex';    
-    url = `/api/city?city=${city}&state=${state}&country=${country}&key=${API_KEY}`;
+    loader.style.display = 'flex';
+    if(env == 'production') {
+        url = `/api/city?city=${city}&state=${state}&country=${country}&key=${API_KEY}`;
+    } else {
+        url = `http://api.airvisual.com/v2/city?city=${city}&state=${state}&country=${country}&key=${API_KEY}`;
+    }
+    
     fetch(url)
         .then((response) => {
             if(response.status == '200') {
