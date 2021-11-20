@@ -1,3 +1,4 @@
+// added api key
 const API_KEY = 'cca9de64-6cd7-44e0-9da3-f379d6f5edda';
 let city = '';
 let state = '';
