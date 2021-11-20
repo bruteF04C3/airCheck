@@ -32,3 +32,4 @@
     <li>Unique Design</li>
   </ul></p>
 </div>
+<h2>Contribution Rules</h2>
