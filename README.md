@@ -5,7 +5,7 @@
 
 <!-- LAPTOP -->
 <div>
-  <a href="https://aircheck.netlify.app/"><img width=500 height=300 align=right src="https://github.com/Swarzinium-369/airCheck/blob/master/Images/laptop%20gif.gif"></a>
+  <a href="https://aircheck.netlify.app/"><img width=500 height=300 align=right src="https://github.com/Swarzinium-369/airCheck/blob/master/Images/airCheck%20laptop.gif"></a>
   <p>Air Check is a <b>realtime Air Quality Index status informer</b> giving the following details of your Desired Location at any point of time.</p>
   <ul>
     <li>AQI US</li>
@@ -19,7 +19,7 @@
 
 <!-- MOBILE -->
 <div>
-  <a href="https://aircheck.netlify.app/"><img width=280 height=500 align=left src="https://github.com/Swarzinium-369/airCheck/blob/master/Images/mobile%20gif.gif"></a>
+  <a href="https://aircheck.netlify.app/"><img width=280 height=500 align=left src="https://github.com/Swarzinium-369/airCheck/blob/master/Images/aircheck%20mobile.gif"></a>
   <h2>The PROBLEM !</h2>
   <p>The major problem identified is the <b><i>Non-User Friendly application design and Excessive Clustering of information dumped at governmental sites</i></b> which for us as a user makes it confusing to know our desired details.</p><br>
   <h2>The SOLUTION !</h2>
@@ -32,4 +32,4 @@
     <li>Unique Design</li>
   </ul></p>
 </div>
-<h2>Contribution Rules</h2>
+
