@@ -27,7 +27,7 @@
                 <!-- <img src="assets/info.png" alt="" style="height: 15px; align-self: center; margin-left: 10px;"> -->
                 <div class="info-field-container">
                     <input type="text" name="" id="city-name" placeholder="Enter city here"
-                        onchange="getCityName(this.value)">
+                        onchange="getCityName(this.value)" onkeydown="checkLength('city-name')">
                     <img class="next-step-img" src="assets/images/arrow.png" alt="" srcset=""
                         onclick="showNextCard('city-name')">
                 </div>
@@ -38,8 +38,8 @@
             <div class="card" id="state-card">
                 <span class="step-marker yellow"> STEP 2 </span>
                 <div class="info-field-container">
-                    <input type="text" name="" id="state-name" placeholder="Enter state here"
-                        onchange="getStateName(this.value)">
+                    <input type="text" name="" id="state-name" onkeydown="checkLength('state-name')"
+                        placeholder="Enter state here" onchange="getStateName(this.value)">
                     <img class="next-step-img" src="assets/images/arrow.png" alt="" srcset=""
                         onclick="showNextCard('state-name')">
                 </div>
@@ -51,7 +51,7 @@
             <div class="card" id="country-card">
                 <span class="step-marker green"> STEP 3 </span>
                 <div class="info-field-container">
-                    <input type="text" name="" id="country-name" placeholder="Enter country here"
+                    <input type="text" name="" id="country-name" onkeydown="checkLength('country-name')" placeholder="Enter country here"
                         onchange="getCountryName(this.value)">
                     <img class="next-step-img" src="assets/images/checkmark.png" alt="" srcset="" onclick="getResult()">
                 </div>
@@ -84,11 +84,11 @@
                     </div>
                 </div>
                 <div class="card-body" id="_stats">
-                    
+
                     <p style="width: 100%;">
                         Stats will be shown here, kindly follow the steps above for the same.
                     </p>
-                    
+
                 </div>
 
             </div>

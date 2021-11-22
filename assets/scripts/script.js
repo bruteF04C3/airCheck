@@ -29,14 +29,28 @@ function getCountryName(val) {
 }
 
 function showNextCard(prevCard) {
-    if (prevCard == 'city-name') {
-        document.getElementById('city-card').style.display = 'none';
-        document.getElementById('state-card').style.display = 'block';
+    const card = document.getElementById(prevCard);
+    if(card.value != '') {
+        if (prevCard == 'city-name') {
+            document.getElementById('city-card').style.display = 'none';
+            document.getElementById('state-card').style.display = 'block';
+        } else {
+            document.getElementById('state-card').style.display = 'none';
+            document.getElementById('country-card').style.display = 'block';
+        }
     } else {
-        document.getElementById('state-card').style.display = 'none';
-        document.getElementById('country-card').style.display = 'block';
+        card.style.outline = "5px solid red";
+        card.setAttribute('placeholder', 'Required');
     }
+    
 
+}
+
+function checkLength(id) {
+    const card = document.getElementById(id);
+    if(card.value.length >= 2) {
+        card.style.outline = '5px solid green';
+    }
 }
 
 function getResult() {
