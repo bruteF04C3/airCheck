@@ -20,7 +20,7 @@
 <!-- MOBILE -->
 <div>
   <h2>The PROBLEM !</h2>
-  <a href="https://aircheck.netlify.app/"><img width=280 height=500 align=right src="https://github.com/Swarzinium-369/airCheck/blob/master/Images/aircheck%20mobile.gif"></a>
+  <a href="https://aircheck.netlify.app/"><img width=280 height=500 align=right src="https://github.com/bruteF04C3/airCheck/blob/master/Images/airCheck%20mobile.gif"></a>
   
   <p>The major problem identified is the <b><i>Non-User Friendly application design and Excessive Clustering of information dumped at governmental sites</i></b> which for us as a user makes it confusing to know our desired details.</p><br>
   <h2>The SOLUTION !</h2>
