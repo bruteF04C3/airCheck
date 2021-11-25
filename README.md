@@ -5,7 +5,7 @@
 
 <!-- LAPTOP -->
 <div>
-  <a href="https://aircheck.netlify.app/"><img width=500 height=300 align=right src="https://github.com/Swarzinium-369/airCheck/blob/master/Images/airCheck%20laptop.gif"></a>
+  <a href="https://aircheck.netlify.app/"><img width=500 height=300 align=right src="https://github.com/bruteF04C3/airCheck/blob/master/Images/airCheck%20laptop.gif"></a>
   <p>Air Check is a <b>realtime Air Quality Index status informer</b> giving the following details of your Desired Location at any point of time.</p>
   <ul>
     <li>AQI US</li>
